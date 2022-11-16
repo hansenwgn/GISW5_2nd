@@ -1,0 +1,21 @@
+---
+title: "W5"
+output: html_document
+date: "2022-11-16"
+---
+
+```{r}
+#------------------------ Read statistical gis boundaries london data
+library(sf)
+
+Londonborough <- st_read("statistical-gis-boundaries-london/ESRI/London_Borough_Excluding_MHW.shp") %>% 
+  
+  st_transform(., 27700)
+
+```
+```{r}
+#----------------Read OSM Data
+
+```
+
+
